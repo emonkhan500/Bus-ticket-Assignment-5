@@ -1,74 +1,209 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>EK PARIBAHAN</title>
 
-
     <!-- daisy & tailwind -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
-<script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
 
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
 
-<!-- font -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
-
-
-<!-- css -->
-<style>
-    body{
+    <!-- css -->
+    <style>
+      body {
         font-family: "Inter", sans-serif;
-       
-    }
-</style>
-</head>
-<body>
-   <!-- nav section -->
+      }
+    </style>
+  </head>
+  <body>
+    <!-- nav section -->
     <section class="container mx-auto mt-10">
-        <div class="navbar bg-base-100">
-            <div class="navbar-start">
-              <div class="dropdown">
-                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
-                </div>
-                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                  <li><a>Home</a></li>
-                  <li><a>About</a> </li>
-                  <li><a>Destination</a></li>
-                  <li><a>Search</a></li>
-                </ul>
-              </div>
-              <a class=" text-5xl font-bold">P-Ticket</a>
+      <div class="navbar bg-base-100">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
             </div>
-            <div class="navbar-center hidden lg:flex">
-              <ul class="menu menu-horizontal px-1">
-                <li><a>Home</a></li>
-                  <li><a>About</a> </li>
-                  <li><a>Destination</a></li>
-                  <li><a>Search</a></li>
-              </ul>
-            </div>
-            <div class="navbar-end ">
-              <div class="flex rounded-xl border px-5 py-3 border-green-500">
-                <p class="mr-4 text-green-400">Bus</p>
-              <img src="./images/bus-icon.png" alt="">
-              </div>
-            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+            >
+              <li><a>Home</a></li>
+              <li><a>About</a></li>
+              <li><a>Destination</a></li>
+              <li><a>Search</a></li>
+            </ul>
           </div>
-
+          <a class="text-5xl font-bold">P-Ticket</a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li><a>Home</a></li>
+            <li><a>About</a></li>
+            <li><a>Destination</a></li>
+            <li><a>Search</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <div class="flex rounded-xl border px-5 py-3 border-green-500">
+            <p class="mr-4 text-green-400">Bus</p>
+            <img src="./images/bus-icon.png" alt="" />
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- banner section -->
-    <section></section>
+    <section class="container mx-auto mt-10">
+      <div class="">
+        <div
+          class="hero rounded-xl"
+          style="background-image: url(./images/banner.png)"
+        >
+          <div class="hero-overlay bg-opacity-40"></div>
+          <div
+            class="hero-content text-center text-neutral-content py-40 rounded-xl"
+          >
+            <div class="">
+              <h1 class="mb-5 text-5xl font-bold">End-to-End-TravelWith</h1>
+              <h1 class="mb-5 text-5xl font-bold text-green-500">
+                EK Paribahan
+              </h1>
+              <p class="mb-5">
+                We are providing best quality service. We have three types of
+                plan
+              </p>
+              <button class="btn btn-primary">Buy Tickets</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- offer -->
-    <section></section>
+    <section class="container mx-auto mt-12">
+      <h1 class="text-4xl text-center mb-10">Best offer for you</h1>
+      <div class="absu flex flex-col lg:flex-row gap-9">
+        <div
+          class="flex items-center justify-between px-10 py-8 bg-yellow-400 sm:w-[570px] lg:w-1/2 rounded-xl"
+        >
+          <div>
+            <h1 class="text-3xl font-bold">15% OFF</h1>
+            <p class="text-xl font-bold">on your next purchase</p>
+            <p>use by January 2024</p>
+          </div>
+          <div>
+            <h1 class="text-2xl">NEW15</h1>
+            <p>Coupon Code</p>
+          </div>
+        </div>
+
+        <div
+          class="flex items-center justify-between px-10 py-8 bg-pink-400 sm:w-[570px] lg:w-1/2 rounded-xl"
+        >
+          <div class=" ">
+            <h1 class="text-3xl font-bold">20% OFF</h1>
+            <p class="text-xl font-bold">on your next purchase</p>
+            <p>use by January 2024</p>
+          </div>
+          <div>
+            <h1 class="text-2xl">Couple 20</h1>
+            <p>Coupon Code</p>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-7">
+        <button class="text-green-500 p-3 rounded-2xl border border-green-500">
+          See All Offers
+        </button>
+      </div>
+    </section>
 
     <!-- paribahan -->
-    <section></section>
+    <section
+      class="container mx-auto mt-10 pb-32 px-4 py-6 bg-gray-100 rounded-md"
+    >
+      <div class="text-center">
+        <h1 class="text-4xl font-bold">EK Paribahan</h1>
+        <p class="mt-5">
+          Yes, you can run unit tests and view the results directly within the
+          app. The integrated testing features allow for a streamlined
+        </p>
+      </div>
+      <div class="flex mt-16 bg-white px-8 py-8">
+        <div class="">
+          <div class="flex  bg-white">
+            <div>
+              <div class="flex gap-4">
+                <img src="./images/bus-logo.png" alt="" />
+                <div>
+                  <p class="text-3xl font-bold">EK Paribahan</p>
+                  <p>Coach-009-WEb</p>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="flex  gap-3 px-3 py-2 rounded-xl ml-20 lg:ml-80 bg-green-200">
+                <img src="./images/seat-green-filled.png" alt="" />
+                <p class="text-green-500 ">40 seats left</p>
+              </div>
+            </div>
+          </div>
+          <div class="bg-gray-100 rounded-xl mt-4 px-4 py-5">
+            <div class="flex justify-between">
+              <p>Route</p>
+              <p>Dhaka-Sylhet</p>
+            </div>
+            <hr class="mt-2 mb-2">
+            <div class="flex justify-between">
+              <p>Departure Time</p>
+              <p>9:00PM</p>
+            </div>
+            <hr class="mt-2 mb-2">
+            <div class="flex justify-evenly mt-3" >
+              <p class="px-2 py-2 rounded-xl bg-gray-200">Dropping Point-Bogura</p>
+              <p class="px-2 py-2 rounded-xl bg-gray-200">Dropping Point-Bogura</p>
+              <p class="px-2 py-2 rounded-xl bg-gray-200">Est. Time-11 hour</p>
+              
+            </div>
+
+          </div>
+        </div>
+       <div class="flex justify-center items-center">
+        <div class="flex flex-col justify-center items-center ml-2 lg:ml-[450px] text-center">
+          <img class="h-10 w-10" src="./images/fare.png" alt="" />
+          <h1 class="text-3xl font-bold">550 Taka</h1>
+          <p>Per Seat</p>
+        </div>
+       </div>
+      </div>
+    </section>
 
     <!-- seat list -->
     <section></section>
@@ -76,12 +211,7 @@
     <!-- footer -->
     <section></section>
 
-    
-
-
-
     <script src="utiliy.js"></script>
     <script src="bus.js"></script>
-    
-</body>
+  </body>
 </html>
