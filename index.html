@@ -214,7 +214,7 @@
 
     <!-- seat list -->
     <section
-      class="container mx-auto px-4 py-6mt-32 pb-32 bg-gray-100 rounded-xl"
+      class="container mx-auto px-4 mb-36  py-6 mt-32  bg-gray-100 rounded-xl"
     >
       <div
         class="bg-white px-4 py-6 flex gap-14 flex-col lg:flex-row rounded-xl"
@@ -340,6 +340,10 @@
               <p class="font-bold">Total Price</p>
               <p class="font-bold">BDT <span  id="total" class="font-bold">0</span></p>
             </div>
+            <div class="flex justify-between">
+              <p class="font-bold">Discount</p>
+              <p class="font-bold">BDT <span  id="discount" class="font-bold">0</span></p>
+            </div>
 
             <!-- discount div -->
             <div id="discount">
@@ -347,7 +351,7 @@
             </div>
             <div id="btn-div" class="flex justify-between bg-white py-2 px-3 rounded-xl mt-4">
               <input id="input" class="px-3 py-2" placeholder="Have any coupon?" type="text">
-              <button id="apply" class="bg-green-500 px-3 py-2 rounded-xl text-white">Apply</button>
+              <button disabled id="apply" class="bg-green-500 px-3 py-2 rounded-xl text-white X">Apply</button>
             </div>
             <div class="flex justify-between mt-4">
               <p  class="font-bold">Grand Total</p>
@@ -359,13 +363,34 @@
             </div>
             <div class="mt-4">
               <p class="font-bold">Phone Number*</p>
-              <input class="py-5 w-full px-5 mt-2 rounded-xl" placeholder="Enter your phone number" type="text">
+              <input id="phone" class="py-5 w-full px-5 mt-2 rounded-xl" placeholder="Enter your phone number" type="number">
             </div>
             <div class="mt-4">
               <p class="font-bold">Email ID</p>
               <input class="py-5 w-full px-5 mt-2 rounded-xl" placeholder="Enter your email id" type="text">
             </div>
-            <button class="w-full bg-green-500 text-center text-white py-5 mt-4 rounded-xl">Next</button>
+            <button id="next"  onclick="my_modal_1.showModal()" class="w-full bg-green-500 text-center text-white py-5 mt-4 rounded-xl">Next</button>
+
+            <!--  -->
+            <!-- Open the modal using ID.showModal() method -->
+
+<dialog id="my_modal_1" class="modal">
+  <div class="modal-box">
+   <div class="flex flex-col justify-center items-center space-y-2">
+    <img class="flex flex-col justify-center items-center" src="./images/Group.jpg" alt="">
+    <h3 class="font-bold text-lg">SUCCESS</h3>
+    <p class="py-4">Thank you for Booking Our Bus Seats. 
+      We are working hard to find the best service and deals for you. 
+      Shortly you will find a confirmation in your email.</p>
+    <div class="modal-action">
+      <form method="dialog">
+        <!-- if there is a button in form, it will close the modal -->
+        <button class="btn btn-success text-white">Continue</button>
+   </div>
+      </form>
+    </div>
+  </div>
+</dialog>
           </div>
         </div>
         
@@ -373,7 +398,26 @@
     </section>
 
     <!-- footer -->
-    <section></section>
+    <section class=" ">
+      <footer class="footer p-10 bg-neutral px-44 py-32 text-neutral-content h-[400px]">
+        <aside class="">
+         
+          <p class="text-5xl font-bold">E-Ticket</p>
+          <p class="mt-2">P-Ticket is a digital platform to make your daily commuting better.</p>
+          
+          <p class="mt-10">@all rights reserved, P-Ticket services limited.2024</p>
+        </aside> 
+        
+        <nav>
+          <h6 class="footer-title text-2xl">Download our app</h6> 
+          <div class="flex mt-4 gap-4">
+            <p class="text-xl">Terms & condition</p>
+            <p class="text-xl">Return & refund policy</p>
+            <p class="text-xl">Privacy policy</p>
+          </div>
+        </nav>
+      </footer>
+    </section>
 
     <script src="utiliy.js"></script>
     <script src="bus.js"></script>
