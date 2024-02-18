@@ -129,6 +129,12 @@ document.getElementById("apply").addEventListener("click", function () {
   }
 });
 
+// clear everything after continue
+
+document.getElementById('next').addEventListener('click',function(){
+  window.location.reload();
+})
+
 // clicking buy ticket button
 
 document.getElementById("buyTicket").addEventListener("click", function () {
