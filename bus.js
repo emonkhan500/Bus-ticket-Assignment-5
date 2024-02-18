@@ -17,7 +17,7 @@ for (const seat of seats) {
 
 // show in ui
 const ui=document.getElementById('ui')
-console.log(ui)
+
 const div = document.createElement('div')
 ui.appendChild(div)
 div.classList.add('flex')
@@ -56,7 +56,9 @@ const grandPriceTexts= grandPriceElement.innerText
 const granPriceNumber=parseInt(grandPriceTexts)
 
 const pricesss= granPriceNumber+prices;
-grandPriceElement.innerText=pricesss;
+ grandPriceElement.innerText=pricesss;
+
+
 
 
     // left seat validation
@@ -83,10 +85,49 @@ grandPriceElement.innerText=pricesss;
     // seat colour set
     const elementsId = e.target.id;
     setBackgroundById(elementsId);
+    
   });
+  
 }
-// apply btn
 
+// apply btn
+document.getElementById('apply').addEventListener('click',function(){
+
+  const grandPriceElement=document.getElementById('grand-total')
+  const grandprice= grandPriceElement.innerText
+  const grandpriceNumber= parseInt(grandprice)
+  
+
+
+
+  
+
+
+
+  const inputFeild= document.getElementById('input')
+  const inputValue= inputFeild.value
+  console.log(inputValue)
+
+  if(inputValue==='NEW15'){
+    const discount= grandpriceNumber * 0.15
+    const newGrandTotal= grandpriceNumber-discount
+    grandPriceElement.innerText=newGrandTotal
+
+    const btn = document.getElementById('btn-div')
+    btn.classList.add('hidden')
+  }
+ else if(inputValue==='Couple 20'){
+    const discount= grandpriceNumber * 0.20
+    const newGrandTotal= grandpriceNumber-discount
+    grandPriceElement.innerText=newGrandTotal
+
+    const btn = document.getElementById('btn-div')
+    btn.classList.add('hidden')
+  }
+  else{
+    alert('Invalid Coupon Code')
+  }
+})
 
 
 // clicking buy ticket button
